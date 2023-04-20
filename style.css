@@ -184,7 +184,15 @@ body {
     float: left;
     width: auto;
 }
-
+@media only screen and (max-width:488px){
+    .gallery{
+    display:inline;
+    margin: 5px;
+    border: 3px;
+    float: left;
+    width: auto;
+    }
+}
 
 /*------------------ Table Style ------------------------*/
 table, td, th {
