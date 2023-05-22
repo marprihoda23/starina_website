@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+html, body {/*body paragraph style*/
+  font-family: 'Raleway', sans-serif;
+  background-color:#f3f6f4;
+  color: #708086;
+}
+/*------------------  menu navagation  ------------------------*/
+input[type="button"], .btn {
+  cursor: pointer;
+  font-family: Raleway;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 400px;
+  padding: 3em;
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#topnav {/*Navigation bar*/
+  overflow: hidden;
+  background-color:#ffaaa5;
+
+}
+#topnav a {/*navigation bar font*/
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+#topnav a:hover {/*hover effect*/
+  background-color:#dcedc1;
+  color: black;
+}
+
+#topnav a.active { /*home button*/
+  background-color:#ff8b94;
+  color: white;
+}
+/*------------------  Manga Nav Menu Menu ------------------------*/
+
+#bottom-nav {/*Navigation bar*/
+  overflow: hidden;
+  background-color:#e4ebe7;
+  color: black;
+    position:sticky;
+}
+#bottom-nav a {/*navigation bar font*/
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.sticky{
+    position:fixed;
+    top: 0;
+    
+}
+.content{
+    padding: 16px;
+}
+
+.sticky + .content{
+    padding-top: 60px;
+}
+
+#bottom-nav a:hover {/*hover effect*/
+  
+  color: black;
+}
+
+#bottom-nav a.active { /*home button*/
+  color: black;
+}
+
+/*------------------  DropDown Menu ------------------------*/
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+ 
+}
+.dropdown button{
+    background-color:#dcedc1;
+    color: black;
+}
+
+/* Dropdown button effects */
+.dropdown .dropbtn{
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color:#dcedc1;
+  color: black;
+  padding: 14px 16px;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    color: black;
+    display: block;
+}
+/*------------------ Text Organization ------------------------*/
+.row {
+   
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.no-gutters {
+    margin-left: 30;
+    margin-right:30;   
+}
+
+.pl-3{
+    padding-left: 1rem!important;
+}
+.col-lg-6 {
+        flex: 0 0 30%;
+        max-width: 100%
+}
+.col-2 {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 50%;
+}
+
+.text {
+    font-size: 1rem;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+.series_thumb {
+    align-items:center;
+    display: flex; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height:auto;
+    width:auto;
+
+}
+
+.textsmall {
+    color: #52667c;
+    font-size: .9rem;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+.gallery {
+    display:flex;
+    margin: 5px;
+    border: 3px;
+    float: left;
+    width: auto;
+}
+@media only screen and (max-width:488px){
+    .gallery{
+    display:inline;
+    margin: 5px;
+    border: 3px;
+    float: left;
+    width: auto;
+    }
+}
+/*------------------ Table Style ------------------------*/
+table, td, th {
+    text-align: center;
+    table-layout: fixed;
+    width: 70%;
+    border: 2px; 
+    word-wrap:break-word;
+}
+
+th{
+    font-size: 18px;
+    height: 50px;
+}
+
+
+.mangaTable {
+    margin-left: auto;
+    margin-right: auto;
+}
+.manhwaTable{
+    margin-left: auto;
+    margin-right: auto;   
+}
+.webtoonTable{
+    margin-left: auto;
+    margin-right: auto;   
+}
